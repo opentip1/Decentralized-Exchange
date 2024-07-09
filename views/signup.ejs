@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('./partials/head') %>
+    <link rel="stylesheet" href="/css/home.css">
+    <link rel="stylesheet" href="/css/signup.css">
+
+    
+    <title>Signup</title>
+</head>
+<body class="signup-body">
+    <%- include('./partials/nav' , { currentUrl: '/user/signup' }) %>
+
+
+    <div class="registration-container">
+      <div class="registration-box">
+          <h2>Create Account</h2>
+          <div class="tabs">
+              <button class="tab active">Email</button>
+              <button class="tab">Mobile Number</button>
+          </div>
+          <form action="/user/signup" method="post" class="registration-form">
+              <input type="email" placeholder="Email"  name="email" required>
+              <input type="password" placeholder="Password"  name="password"  required>
+              <label class="terms">
+                  <input type="checkbox" required>
+                  By clicking "Create Account", you agree to <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a>
+              </label>
+              <button type="submit" class="create-account-button">Create Account</button>
+              <div class="separator">Or sign up with</div>
+              <div class="alternative-signups">
+                  <button class="google-signup">Google</button>
+                  <button class="apple-signup">Apple</button>
+              </div>
+          </form>
+      </div>
+      <div class="promo-box">
+          <h3>Bybit x Taiko</h3>
+          <p>Get a head start with 2,000,000 TAIKO on ByStarter!</p>
+          <!-- <img src="#" alt="Bybit x Taiko"> -->
+          <div class="promo-image"></div>
+          <button class="get-started-button">Get Started</button>
+      </div>
+  </div>
+    
+    
+</body>
+</html> `

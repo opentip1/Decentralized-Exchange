@@ -1,0 +1,179 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+}
+
+.sidebar {
+    width: 200px;
+    background-color: #f7f8fa;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: #000;
+    display: block;
+}
+
+.sidebar ul li:hover {
+    background-color: #ececec;
+}
+
+.sidebar ul li.active {
+    background-color: #f7a800;
+}
+
+.sidebar ul li.active a {
+    color: #fff;
+}
+
+.sidebar ul li.invested-products, .sidebar ul li.analysis {
+    color: #888;
+    font-weight: bold;
+}
+
+.main-content {
+    flex-grow: 1;
+    padding: 20px;
+    background-color: #fff;
+    box-sizing: border-box;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.header h1 {
+    margin: 0;
+}
+
+.total-equity, .available-balance {
+    text-align: right;
+}
+
+.total-equity .amount, .available-balance .amount {
+    font-weight: bold;
+}
+
+.btn {
+    background-color: #f7a800;
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    margin-left: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #e69600;
+}
+
+.crypto-section .tabs {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.crypto-section .tab {
+    padding: 10px 20px;
+    border: 1px solid #ddd;
+    cursor: pointer;
+    margin-right: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.crypto-section .tab.active {
+    background-color: #f7a800;
+    color: #fff;
+}
+
+.crypto-section .tab:hover:not(.active) {
+    background-color: #ececec;
+}
+
+.crypto-section .search-bar {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.crypto-section .search-bar input[type="text"] {
+    padding: 10px;
+    border: 1px solid #ddd;
+    flex-grow: 1;
+    margin-right: 10px;
+}
+
+.crypto-section .search-bar input[type="checkbox"] {
+    margin-left: 10px;
+}
+
+.crypto-section table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.crypto-section table th, .crypto-section table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+.crypto-section table th {
+    background-color: #f7f8fa;
+}
+
+.crypto-section table td {
+    vertical-align: middle;
+}
+
+.coin {
+    display: flex;
+    align-items: center;
+}
+
+.coin-icon {
+    width: 24px; /* Adjust the size as needed */
+    height: 24px; /* Adjust the size as needed */
+    margin-right: 10px; /* Space between the icon and the text */
+}
+
+.crypto-section table td a {
+    color: #f7a800;
+    font-weight: bold;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+.crypto-section table td a:hover {
+    text-decoration: underline;
+}
+
