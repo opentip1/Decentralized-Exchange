@@ -1,5 +1,21 @@
 Creating a platform to trade and transfer digital assets with enhanced security, privacy, and efficiency is an ambitious and valuable goal. Here’s an outline of the key features and functionalities such a platform might include:
 
+
+Project: Decentralized Exchange Platform Integration
+
+Overview: Developed a Decentralized Exchange (DEX) platform within Salesforce, allowing users to securely trade and transfer digital assets while maintaining full control over their funds. The project integrated blockchain technology with Salesforce, providing a seamless experience for managing cryptocurrency transactions.
+
+Key Responsibilities:
+
+Web3 Integration: Leveraged Lightning Web Components (LWC) and Web3.js to enable real-time interactions with the Ethereum blockchain, supporting token transfers and P2P transactions directly within Salesforce.
+Smart Contract Interaction: Utilized Apex Web Services to interact with Ethereum smart contracts, automating secure and efficient transactions.
+API Development: Created RESTful APIs to integrate Salesforce with Alchemy, enabling functionalities such as token transfers and NFT management.
+Custom UI Design: Developed user-friendly LWCs for managing digital assets, including features for viewing balances, executing trades, and participating in airdrops.
+Automation & Workflows: Implemented Apex triggers and Salesforce Flows to automate complex blockchain-related workflows, ensuring smooth and efficient operations.
+Data Security: Ensured secure data handling by integrating decentralized storage solutions like IPFS for off-chain data, while maintaining on-chain references within Salesforce.
+Analytics & Reporting: Built real-time dashboards to monitor blockchain transactions and platform performance, providing valuable insights.
+Technologies Used: Salesforce LWC, Apex, RESTful APIs, Web3.js, Ethereum, Smart Contracts, Alchemy, IPFS, Salesforce Flows, Apex Triggers
+
 ### Key Features
 
 1. **Coin Transfer:**
